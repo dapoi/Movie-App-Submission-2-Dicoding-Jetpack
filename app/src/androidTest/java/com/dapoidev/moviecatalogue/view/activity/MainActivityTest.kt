@@ -66,7 +66,7 @@ class MainActivityTest {
 
     @Test
     fun loadDetailTVShow() {
-        onView(withId(R.id.nav_tv_shows)).perform(click())
+        onView(withText("TV SHOWS")).perform(click())
         onView(withId(R.id.rv_tvshows)).perform(RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(0, click()))
 
         onView(withId(R.id.tv_detail_title)).check(matches(isDisplayed()))
