@@ -60,8 +60,6 @@ class MainActivityTest {
 
         onView(withId(R.id.tv_detail_desc)).check(matches(isDisplayed()))
         onView(withId(R.id.tv_detail_desc)).check(matches(withText(dataDummyMovie[0].desc)))
-
-        pressBack()
     }
 
     @Test
@@ -80,7 +78,5 @@ class MainActivityTest {
 
         onView(withId(R.id.tv_detail_desc)).check(matches(isDisplayed()))
         onView(withId(R.id.tv_detail_desc)).check(matches(withText(dataDummyTVShow[0].desc)))
-
-        pressBack()
     }
 }
